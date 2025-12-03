@@ -1,0 +1,186 @@
+ <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Teal E-Commerce Store</title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: #f4f6f5; 
+      color: #333; 
+    } 
+    header { 
+      background-color: #008080; /* teal */ 
+      color: white; 
+      text-align: center; 
+      padding: 20px; 
+    } 
+    nav { 
+      background-color: #009999; /* light teal */ 
+      text-align: center; 
+      padding: 10px; 
+    } 
+    nav a { 
+      color: white; 
+      text-decoration: none; 
+      margin: 15px; 
+      font-weight: bold; 
+    } 
+    nav a:hover { 
+      text-decoration: underline; 
+    } 
+    section { 
+      background-color: white; 
+      margin: 20px auto; 
+      padding: 20px; 
+      width: 80%; 
+      border-radius: 8px; 
+      box-shadow: 0 0 8px rgba(0,0,0,0.1); 
+    } 
+    h2 { 
+      color: #006666; 
+      border-bottom: 2px solid #008080; 
+      padding-bottom: 5px; 
+    } 
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 10px; 
+    } 
+    th, td { 
+      border: 1px solid #ccc; 
+      padding: 10px; 
+      text-align: left; 
+    } 
+    th { 
+      background-color: #008080; 
+      color: white; 
+    } 
+    input, textarea, select { 
+      width: 100%; 
+      padding: 8px; 
+      margin: 6px 0; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+    } 
+    input[type="submit"] { 
+      background-color: #008080; 
+      color: white; 
+      border: none; 
+      padding: 10px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      border-radius: 4px; 
+    } 
+    input[type="submit"]:hover { 
+      background-color: #009999; 
+    } 
+    footer { 
+      background-color: #006666; 
+      color: white; 
+      text-align: center; 
+      padding: 15px; 
+      margin-top: 20px; 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <header> 
+    <h1>Teal E-Commerce Store</h1> 
+    <p>Fresh Deals. Simple Shopping.</p> 
+  </header> 
+ 
+  <nav> 
+    <a href="#products">Products</a> 
+    <a href="#cart">Cart</a> 
+    <a href="#checkout">Checkout</a> 
+  </nav> 
+ 
+  <!-- Products Section --> 
+  <section id="products"> 
+    <h2>Our Products</h2> 
+    <table> 
+      <tr> 
+        <th>Product</th> 
+        <th>Description</th> 
+        <th>Price</th> 
+      </tr> 
+      <tr> 
+        <td><b>Casual T-Shirt</b></td> 
+        <td>Soft cotton, comfortable daily wear.</td> 
+        <td>₹499</td> 
+      </tr> 
+      <tr> 
+        <td><b>Bluetooth Speaker</b></td> 
+        <td>Portable with rich sound quality.</td> 
+        <td>₹1,299</td> 
+      </tr> 
+      <tr> 
+        <td><b>Handmade Notebook</b></td> 
+        <td>Eco-friendly paper with a unique cover.</td> 
+        <td>₹299</td> 
+      </tr> 
+    </table> 
+  </section> 
+ 
+  <!-- Cart Section --> 
+  <section id="cart"> 
+    <h2>Your Cart</h2> 
+    <table> 
+      <tr> 
+        <th>Product</th> 
+        <th>Quantity</th> 
+        <th>Total</th> 
+      </tr> 
+      <tr> 
+        <td>Casual T-Shirt</td> 
+        <td>1</td> 
+        <td>₹499</td> 
+      </tr> 
+      <tr> 
+        <td>Bluetooth Speaker</td> 
+        <td>1</td> 
+        <td>₹1,299</td> 
+      </tr> 
+      <tr style="font-weight: bold;"> 
+        <td colspan="2" align="right">Total:</td> 
+        <td>₹1,798</td> 
+      </tr> 
+    </table> 
+  </section> 
+ 
+  <!-- Checkout Section --> 
+  <section id="checkout"> 
+    <h2>Checkout</h2> 
+    <form> 
+      <label>Full Name:</label> 
+      <input type="text" placeholder="Enter your name" required> 
+ 
+      <label>Email:</label> 
+      <input type="email" placeholder="Enter your email" required> 
+ 
+      <label>Address:</label> 
+      <textarea placeholder="Enter your address" required></textarea> 
+ 
+      <label>Payment Method:</label> 
+      <select required> 
+        <option>Credit Card</option> 
+        <option>Debit Card</option> 
+        <option>UPI</option> 
+        <option>Cash on Delivery</option> 
+      </select> 
+ 
+      <input type="submit" value="Place Order"> 
+    </form> 
+  </section> 
+ 
+  <footer> 
+    <p>&copy; 2025 Teal E-Commerce Store | All Rights Reserved</p> 
+  </footer> 
+ 
+</body> 
+</html> 
+ 
